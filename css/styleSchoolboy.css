@@ -1,0 +1,239 @@
+:root{
+    --main-radius:0px;
+    --main-padding:5px;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1.6fr 1.0fr 0.8fr;
+    grid-template-areas:
+        "nav nav nav nav2"
+    "main main main main"
+    "main main main main"
+    "main main main main";
+    grid-gap: 0.2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    padding: 3px;
+    font-size: 23px;
+    background: #000080;
+    color: #000080;
+    text-align: center;
+}
+nav{
+    background: #06ceea;
+    grid-area: nav;
+    border-radius:var(--main-radius);
+    padding-top:16px;
+    font-size: 33px;
+
+
+}
+#nav2{
+    background: #06ceea;
+    grid-area: nav2;
+    border-radius:var(--main-radius);
+    padding-top:24px;
+    font-size: 23px;
+
+}
+main{
+    background: #18ab0e;
+    grid-area: main;
+    border-radius:var(--main-radius);
+
+    padding-top: 10px;
+}
+
+#sidebar{
+    background: #b8e60b;
+    grid-area: sidebar;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding) ;
+
+}
+#content1{
+    background: #0d69ab;
+    color: #ffed00;
+    grid-area: content1;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding) ;
+}
+#content2{
+    background: #ffed00;
+    grid-area: content2;
+}
+#content3{
+    background: #e3000b;
+    grid-area: content3;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding) ;
+}
+footer{
+
+    background: #d60185;
+    grid-area: footer;
+    border-radius:var(--main-radius);
+    padding-top:var(--main-padding) ;
+}
+input{
+    width: 65px;
+    background: #ffed00;
+    background-color: #ffed00;
+    border: 1px solid #000090;
+    border-radius: 3px;
+    font-size: 25px;
+    padding: 0px;
+    text-align: center;
+    margin-top: 5px;
+    height: 45px;
+
+}
+#udostepnij{
+    background: #b8e60b;
+    border: none;
+    cursor: pointer;
+
+    border-radius: 5px;
+    margin-top: 8px;
+    font-size: xx-large;
+    width: 10em;
+    height: 2em;
+}
+submit{
+    width: 150px;
+}
+
+a.tilelink{
+    text-decoration: none;
+    display: block;
+}
+.error
+{
+    color:red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 550px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas:
+        "nav"
+        "sidebar"
+        "main"
+        "content1"
+        "content2"
+        "content3"
+        "footer";
+    }
+}
+
+
+.btn{
+    background: #b8e60b;
+    border: none;
+    cursor: pointer;
+    padding: 0.7rem 2rem;
+    border-radius: 3px;
+
+    margin-bottom: 5px;
+    margin-right: 20px;
+    font-size: large;
+
+
+}
+
+
+.btn:hover{
+    opacity: 0.8;
+}
+.btn2{
+    background: #06ceea;
+    border: none;
+    cursor: pointer;
+    padding: 0.7rem 2rem;
+    border-radius: 3px;
+    margin-top: 15px;
+    font-size: large;
+    border: 2px solid #000090;
+}
+.btn2:hover{
+    opacity: 0.8;
+}
+.btn3{
+    background: #b8e60b;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+    border-radius: 3px;
+    margin: 8px;
+    font-size: large;
+    width: 6em;
+}
+.btn3:hover{
+    opacity: 0.8;
+}
+.btn4{
+    background: #b8e60b;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+    border-radius: 3px;
+    margin: 8px;
+    font-size: large;
+    width: 4em;
+}
+.btn4:hover{
+    opacity: 0.8;
+}
+.page-info {
+    margin-left: 1rem;
+    font-size: large;
+}
+
+.error {
+    background: orangered;
+    color: #fff;
+    padding: 1rem;
+}
+#pdf-render {
+    margin-left: 4rem;
+    border-radius: 15px;
+}
+#canvas_container{
+
+    overflow: auto;
+    background: #18ab0e;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#tytul
+{
+    background: #06ceea;
+    font-size: 20px;
+    text-align: center;
+    width: 15%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+#tytul4
+{
+    background: #06ceea;
+    font-size: 20px;
+    text-align: center;
+    width: 15%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: auto;
+    border-radius: 5px;
+
+
+
+}
